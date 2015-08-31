@@ -1,0 +1,200 @@
+html, body {
+  height: 100%; }
+
+.row {
+  width: 100%; }
+
+.container {
+  padding: 0; }
+
+.jumbotron {
+  margin-bottom: 0; }
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    text-decoration: none;
+    color: black; }
+
+.side-nav {
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .side-nav {
+      width: 10%; } }
+  .side-nav .navitem {
+    padding-top: 49%;
+    padding-top: 7vh;
+    padding-left: 5px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    height: 20vh;
+    background-color: white;
+    transition: background-color 0.5s ease; }
+    @media screen and (min-width: 1024px) {
+      .side-nav .navitem {
+        font-size: 20px; } }
+  .side-nav .homelink:hover, .side-nav .homelink:active {
+    background-color: #E8F5E9; }
+  .side-nav .skillslink:hover, .side-nav .skillslink:active {
+    background-color: #C8E6C9; }
+  .side-nav .projectslink:hover, .side-nav .projectslink:active {
+    background-color: #A5D6A7; }
+  .side-nav .resumelink:hover, .side-nav .resumelink:active {
+    background-color: #81C784; }
+  .side-nav .contactlink:hover, .side-nav .contactlink:active {
+    background-color: #66BB6A; }
+
+.page {
+  min-height: 100%;
+  width: 80%;
+  background-color: white;
+  margin-left: 20%; }
+  @media screen and (min-width: 768px) {
+    .page {
+      width: 90%;
+      margin-left: 10%; } }
+
+.homepage {
+  background-color: #E8F5E9;
+  background: linear-gradient(white, #E8F5E9); }
+
+.home {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-top: 20vh;
+  text-align: center;
+  padding: 8px; }
+
+.skillspage {
+  background-color: #C8E6C9;
+  background: linear-gradient(#E8F5E9, #C8E6C9); }
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    padding-top: 100px;
+    padding-top: 10vh; } }
+@media screen and (min-width: 1024px) {
+  .skills p {
+    padding: 20px; } }
+.skills div {
+  padding-top: 30px; }
+
+.projects-page {
+  background-color: #A5D6A7;
+  background: linear-gradient(#C8E6C9, #A5D6A7); }
+
+.project {
+  padding: 20px; }
+
+.overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 87%;
+  height: 80%;
+  top: 10%;
+  text-align: center;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.5); }
+  .overlay a {
+    color: white;
+    text-decoration: underline; }
+
+@media screen and (min-width: 1025px) {
+  /*        HOVER EFFECT CSS          */
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default; }
+
+  .hovereffect .overlay {
+    background-color: inherit;
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    color: white; }
+
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6); }
+
+  .hovereffect h2 {
+    display: none; }
+
+  .hovereffect a {
+    text-decoration: underline; }
+
+  .hovereffect a, .hovereffect p {
+    color: #FFF;
+    padding: 5px 0;
+    padding: 1vh 0;
+    font-size: medium;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+  @media screen and (min-width: 1025px) and (min-width: 1024px) {
+    .hovereffect a, .hovereffect p {
+      font-size: x-large; } }
+
+@media screen and (min-width: 1025px) {
+  .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  /*       END HOVER EFFECT CSS          */ }
+.resume-page {
+  background-color: #81C784;
+  background: linear-gradient(#A5D6A7, #81C784); }
+  .resume-page a {
+    text-decoration: underline; }
+
+.contact-page {
+  background-color: #66BB6A;
+  background: linear-gradient(#81C784, #66BB6A); }
+
+.contact-container {
+  padding-top: 100px;
+  padding-top: 15vh; }
+
+/*# sourceMappingURL=style.css.map */
