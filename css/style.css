@@ -1,8 +1,7 @@
 html, body {
-  height: 100%; }
-
-.row {
-  width: 100%; }
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .container {
   padding: 0; }
@@ -67,6 +66,9 @@ a {
 .homepage {
   background-color: #E8F5E9;
   background: linear-gradient(white, #E8F5E9); }
+  .homepage img {
+    width: 200px;
+    border-radius: 50%; }
 
 .home {
   font-family: 'Merriweather Sans', sans-serif;
@@ -91,6 +93,8 @@ a {
 .projects-page {
   background-color: #A5D6A7;
   background: linear-gradient(#C8E6C9, #A5D6A7); }
+  .projects-page .more-to-come {
+    text-align: center; }
 
 .project {
   padding: 20px; }
@@ -188,10 +192,22 @@ a {
   background: linear-gradient(#A5D6A7, #81C784); }
   .resume-page a {
     text-decoration: underline; }
+  .resume-page .resume-head {
+    padding: 0; }
+  .resume-page .education {
+    padding: 0; }
+    @media screen and (min-width: 1024px) {
+      .resume-page .education {
+        padding: 20px 0; } }
+    .resume-page .education ul {
+      padding-left: 30px; }
+  .resume-page .professional {
+    padding: 0; }
 
 .contact-page {
   background-color: #66BB6A;
-  background: linear-gradient(#81C784, #66BB6A); }
+  background: linear-gradient(#81C784, #66BB6A);
+  padding-bottom: 0; }
 
 .contact-container {
   padding-top: 100px;

@@ -14,10 +14,8 @@ $contactpage-color: #66BB6A;
 
 html, body {
 	height: 100%;
-}
-
-.row {
-	width: 100%;
+	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
 }
 
 .container{
@@ -114,6 +112,10 @@ a{
 
     background-color: $homepage-color;
     background: linear-gradient(white, $homepage-color);
+    img {
+    	width: 200px;
+    	border-radius: 50%;
+    }
 }
 .home {
 	@include bigfont;
@@ -146,6 +148,10 @@ a{
 .projects-page {
 	background-color: $projectspage-color;
 	background: linear-gradient($skillspage-color, $projectspage-color);
+
+	.more-to-come {
+		text-align: center;
+	}
 }
 .project {
 	padding: 20px;
@@ -257,11 +263,32 @@ a{
 	a {
 		text-decoration: underline;
 	}
+	
+	.resume-head {
+		padding: 0;
+	}
+
+	.education{
+		padding: 0;
+		@media screen and (min-width: 1024px){
+			padding: 20px 0;
+		}
+
+		ul {
+			padding-left: 30px;
+		}
+	}
+
+	.professional {
+		padding: 0;
+
+	}
 }
 
 .contact-page {
 	background-color: $contactpage-color;
 	background: linear-gradient($resumepage-color, $contactpage-color);
+	padding-bottom: 0;
 }
 .contact-container {
 	padding-top: 100px;
