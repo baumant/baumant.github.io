@@ -55,6 +55,7 @@ a{
 		color: $accent-text;
 		border-bottom: 1px solid;
 		border-right: 1px solid;
+		height: 20%;
 		height: 20vh;
 		background-color: $primary-color;
 		transition: background-color 0.5s ease;
@@ -288,16 +289,11 @@ a{
 	background-color: $contactpage-color;
 	background: linear-gradient($resumepage-color, $contactpage-color);
 	padding-bottom: 0;
+
 }
 .contact-container {
 	padding-top: 100px;
 	padding-top: 15vh;
-	p {
-		width: 375px;
-		@media screen and (min-width: 400px){
-			width: auto;
-		}
-	}
 }
 
 
