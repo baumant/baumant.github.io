@@ -1,7 +1,5 @@
 html, body {
-  height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
+  height: 100%; }
 
 .container {
   padding: 0; }
@@ -212,5 +210,10 @@ a {
 .contact-container {
   padding-top: 100px;
   padding-top: 15vh; }
+  .contact-container p {
+    width: 375px; }
+    @media screen and (min-width: 400px) {
+      .contact-container p {
+        width: auto; } }
 
 /*# sourceMappingURL=style.css.map */

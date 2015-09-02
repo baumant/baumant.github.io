@@ -14,8 +14,7 @@ $contactpage-color: #66BB6A;
 
 html, body {
 	height: 100%;
-	overflow-y: scroll;
-  	-webkit-overflow-scrolling: touch;
+
 }
 
 .container{
@@ -293,6 +292,12 @@ a{
 .contact-container {
 	padding-top: 100px;
 	padding-top: 15vh;
+	p {
+		width: 375px;
+		@media screen and (min-width: 400px){
+			width: auto;
+		}
+	}
 }
 
 
