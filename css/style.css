@@ -21,8 +21,7 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
   width: 20%;
   height: 100%;
-  position: fixed;
-  text-align: center; }
+  position: fixed; }
   @media screen and (min-width: 768px) {
     .side-nav {
       width: 10%; } }
@@ -72,7 +71,6 @@ a {
 .home {
   font-family: 'Merriweather Sans', sans-serif;
   margin-top: 20vh;
-  text-align: center;
   padding: 8px; }
 
 .skillspage {
@@ -88,12 +86,12 @@ a {
     padding: 20px; } }
 .skills div {
   padding-top: 30px; }
+.skills li {
+  font-size: 18px; }
 
 .projects-page {
   background-color: #A5D6A7;
   background: linear-gradient(#C8E6C9, #A5D6A7); }
-  .projects-page .more-to-come {
-    text-align: center; }
 
 .project {
   padding: 20px; }
@@ -197,11 +195,13 @@ a {
     padding: 0; }
     @media screen and (min-width: 1024px) {
       .resume-page .education {
-        padding: 20px 0; } }
+        padding: 0 0 20px 0; } }
     .resume-page .education ul {
       padding-left: 30px; }
   .resume-page .professional {
     padding: 0; }
+  .resume-page li {
+    font-size: 18px; }
 
 .contact-page {
   background-color: #66BB6A;
