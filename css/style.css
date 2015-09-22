@@ -207,6 +207,15 @@ a {
   background-color: #66BB6A;
   background: linear-gradient(#81C784, #66BB6A);
   padding-bottom: 0; }
+  .contact-page form {
+    background-color: #E8F5E9;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0; }
+    .contact-page form .mui-form-control:focus {
+      border-color: #66BB6A; }
+    .contact-page form .mui-form-group > .mui-form-control:focus ~ label {
+      color: #66BB6A; }
 
 .contact-container {
   padding-top: 100px;

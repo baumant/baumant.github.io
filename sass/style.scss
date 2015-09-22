@@ -12,6 +12,7 @@ $resumepage-color: #81C784;
 $contactpage-color: #66BB6A;
 
 
+
 html, body {
 	height: 100%;
 
@@ -292,6 +293,18 @@ a{
 	background-color: $contactpage-color;
 	background: linear-gradient($resumepage-color, $contactpage-color);
 	padding-bottom: 0;
+	form{
+		background-color: #E8F5E9;
+		border-radius: 5px;
+		padding: 15px;
+		margin: 15px 0;
+		.mui-form-control:focus {
+    		border-color: $contactpage-color;
+    	}
+    	.mui-form-group>.mui-form-control:focus~label {
+    		color: $contactpage-color;
+		}
+	}
 
 }
 .contact-container {
