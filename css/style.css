@@ -21,18 +21,21 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
   width: 20%;
   height: 100%;
-  position: fixed; }
+  position: fixed;
+  box-shadow: 0px 0 15px; }
   @media screen and (min-width: 768px) {
     .side-nav {
       width: 10%; } }
+  @media screen and (min-width: 1025px) {
+    .side-nav {
+      box-shadow: 0px 0 60px; } }
   .side-nav .navitem {
     padding-top: 49%;
     padding-top: 7vh;
     padding-left: 5px;
     text-align: center;
     color: black;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
+    border-bottom: 1px solid grey;
     height: 20%;
     height: 20vh;
     background-color: white;
@@ -102,9 +105,12 @@ a {
   width: 87%;
   height: 80%;
   top: 10%;
+  box-shadow: 0 0 15px black;
   text-align: center;
   color: white;
   background-color: rgba(128, 128, 128, 0.5); }
+  .overlay p {
+    font-size: 17px; }
   .overlay a {
     color: white;
     text-decoration: underline; }
@@ -118,7 +124,8 @@ a {
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default; }
+    cursor: default;
+    box-shadow: 0 0 60px; }
 
   .hovereffect .overlay {
     background-color: inherit;
@@ -135,7 +142,8 @@ a {
     -webkit-transform: scale(0, 1);
     -ms-transform: scale(0, 1);
     transform: scale(0, 1);
-    color: white; }
+    color: white;
+    box-shadow: none; }
 
   .hovereffect:hover .overlay {
     opacity: 1;
