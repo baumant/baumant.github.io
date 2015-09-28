@@ -150,7 +150,8 @@ a {
     filter: alpha(opacity=100);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+    background-color: rgba(128, 128, 128, 0.5); }
 
   .hovereffect img {
     display: block;
@@ -158,8 +159,10 @@ a {
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
 
-  .hovereffect:hover {
-    background: rgba(0, 0, 0, 0.4); }
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6); }
 
   .hovereffect h2 {
     display: none; }
