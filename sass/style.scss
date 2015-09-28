@@ -246,11 +246,10 @@ a{
 
 .hovereffect a {
 	text-decoration: underline;
+	display: inline-block;
 }
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  padding: 5px 0;
-  padding: 1vh 0;
   font-size: medium;
   opacity: 0;
   filter: alpha(opacity=0);
