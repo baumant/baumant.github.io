@@ -97,6 +97,7 @@ a {
   background: linear-gradient(#C8E6C9, #A5D6A7); }
 
 .project {
+  margin: 0;
   padding: 20px; }
 
 .overlay {
