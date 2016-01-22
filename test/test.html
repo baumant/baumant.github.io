@@ -8,10 +8,19 @@
 </head>
 <body>
 	<div class="container">
-		<img src="" alt="">
+		<div class="threesixty" data-path="image-{index}.png" data-count="94"></div>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="threesixty.js"></script>
-	<script type="text/javascript" src="test.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('.threesixty').threeSixty({
+		        dragDirection: 'horizontal',
+		        useKeys: true,
+		        draggable: true
+		    });	
+		});
+	</script>
+	<!--<script type="text/javascript" src="test.js"></script>-->
 </body>
 </html>
