@@ -209,8 +209,10 @@ a {
       padding-left: 30px; }
   .resume-page .professional {
     padding: 0; }
+    .resume-page .professional .job {
+      padding: 15px; }
   .resume-page li {
-    font-size: 18px; }
+    font-size: 15px; }
 
 .contact-page {
   background-color: #66BB6A;
