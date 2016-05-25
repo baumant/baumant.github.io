@@ -21,6 +21,11 @@ html, body {
 .container{
 	padding: 0;
 }
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
 .jumbotron {
 	margin-bottom: 0;
 }
