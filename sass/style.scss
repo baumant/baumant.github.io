@@ -1,5 +1,5 @@
 @mixin bigfont{
-		font-family: 'Merriweather Sans', sans-serif;
+		font-family: 'Bad Script', cursive;
 	}
 
 $primary-color: white;
@@ -16,6 +16,16 @@ $contactpage-color: #66BB6A;
 html, body {
 	height: 100%;
 
+}
+
+canvas{
+	top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+    @media screen and (min-width: 1025px){
+		display: inherit;
+	}
 }
 
 .container{
@@ -118,13 +128,9 @@ a{
 }
 
 .homepage {
-
-    background-color: $homepage-color;
-    background: linear-gradient(white, $homepage-color);
-    img {
-    	width: 200px;
-    	border-radius: 50%;
-    }
+	background: url(../img/home.jpg);
+    background-size: cover;
+    background-position-x: 61%;
 }
 .home {
 	@include bigfont;
