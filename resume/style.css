@@ -1,0 +1,90 @@
+* {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  /*max-width: 656px;*/
+  margin: 0px auto; }
+
+h1 {
+  font-size: 27px; }
+
+h2 {
+  font-size: 21px; }
+
+h3 {
+  font-size: 17px; }
+
+p, em, li {
+  font-size: 16px; }
+
+.education, .skills, .projects, .work {
+  border-top: 1px solid black;
+  padding: 10px 0; }
+
+p, h3 {
+  margin: 1px 0; }
+
+ul {
+  margin: 1px; }
+
+.top {
+  text-align: center; }
+  .top h1, .top .contact {
+    margin: 10px; }
+  .top .contact a {
+    color: black;
+    text-decoration: none; }
+  .top #bullet {
+    background-color: black;
+    border: 50%; }
+
+.college-specs ul {
+  display: flex;
+  justify-content: space-around; }
+  .college-specs ul li {
+    margin: 0 20px; }
+
+.tech {
+  display: flex;
+  justify-content: space-around; }
+  .tech li {
+    margin: 0 20px; }
+  .tech ul {
+    padding-left: 5px; }
+  .tech div {
+    margin: 0 20px; }
+
+#javascript ul {
+  display: flex; }
+  #javascript ul div {
+    margin: 0; }
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap; }
+  .project-box .project {
+    width: 50%;
+    padding: 5px; }
+    .project-box .project a {
+      font-weight: bold;
+      color: inherit; }
+
+.job ul {
+  list-style-type: none; }
+  .job ul li:before {
+    content: "-";
+    padding-right: 8px;
+    margin-left: 5px; }
+
+/*If Printing use this syling
+    *{
+        font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    }
+
+*/
+/*If Making PDF use this styling */
+
+/*# sourceMappingURL=style.css.map */
