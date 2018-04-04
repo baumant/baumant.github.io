@@ -7,7 +7,7 @@
 }
 
 html {
-    /*max-width: 656px;*/
+    max-width: 750px;
     margin: 0px auto;
 }
 
@@ -106,10 +106,13 @@ ul {
 .job {
     ul {
         list-style-type: none;
-        li:before {
-            content: "-";
-            padding-right: 8px;
-            margin-left: 5px;
+        li{
+            margin-left: 15px;
+            &:before{
+                content: "-";
+                padding-right: 8px;
+                margin-left: -14px;
+            }
         }
     }
 }

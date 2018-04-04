@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 html {
-  /*max-width: 656px;*/
+  max-width: 750px;
   margin: 0px auto; }
 
 h1 {
@@ -74,10 +74,12 @@ ul {
 
 .job ul {
   list-style-type: none; }
-  .job ul li:before {
-    content: "-";
-    padding-right: 8px;
-    margin-left: 5px; }
+  .job ul li {
+    margin-left: 15px; }
+    .job ul li:before {
+      content: "-";
+      padding-right: 8px;
+      margin-left: -14px; }
 
 /*If Printing use this syling
     *{
