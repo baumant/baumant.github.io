@@ -34,7 +34,11 @@ ul {
   margin: 1px; }
 
 .top {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .top h1, .top .contact {
     margin: 10px; }
   .top .contact a {
@@ -64,6 +68,10 @@ ul {
   display: flex; }
   #javascript ul div {
     margin: 0; }
+
+.projects.maker {
+  border-top: 0;
+  padding-top: 0; }
 
 .project-box {
   display: flex;
