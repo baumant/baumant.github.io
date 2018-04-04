@@ -28,6 +28,9 @@ p,em,li {
     border-top: 1px solid black;
     padding: 10px 0;
 }
+.skills{
+    display: flex;
+}
 p, h3 {
     margin: 1px 0;
 }
@@ -57,13 +60,13 @@ ul {
 
 
 .college-specs {
-        ul {
-            display: flex;
-            justify-content: space-around;
-            li {
-                margin: 0 20px;
-            }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+            margin: 0 20px;
         }
+    }
 }
 
 .tech {
