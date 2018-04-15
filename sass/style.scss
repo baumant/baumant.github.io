@@ -166,6 +166,9 @@ a{
 .projects-page {
 	background-color: $projectspage-color;
 	background: linear-gradient($skillspage-color, $projectspage-color);
+  h3.text-center{
+    margin-top: 70px;
+  }
 }
 .project {
 	margin: 0;
@@ -176,13 +179,14 @@ a{
 .overlay {
 	position: absolute;
 	overflow: hidden;
-  	width: 87%;
-  	height: 80%;
-  	top: 10%;
-  	box-shadow: 0 0 15px black;
-  	text-align: center;
-  	color: white;
+	width: 87%;
+	height: 80%;
+	top: 10%;
+	box-shadow: 0 0 15px black;
+	text-align: center;
+	color: white;
 	background-color: rgba(grey, .5);
+  padding-top: 30px;
 	p{
 		font-size: 17px;
 	}
@@ -212,20 +216,21 @@ a{
 .hovereffect .overlay {
 		background-color: inherit;
 		position: absolute;
-  		overflow: hidden;
-  		width: 80%;
-  		height: 80%;
-  		left: 10%;
-  		top: 10%;
-  		border-bottom: 1px solid #FFF;
-  		border-top: 1px solid #FFF;
-  		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  		transition: opacity 0.35s, transform 0.35s;
-  		-webkit-transform: scale(0,1);
-  		-ms-transform: scale(0,1);
-  		transform: scale(0,1);
-  		color: white;
-  		box-shadow: none;
+		overflow: hidden;
+		width: 80%;
+		height: 80%;
+		left: 10%;
+		top: 10%;
+		border-bottom: 1px solid #FFF;
+		border-top: 1px solid #FFF;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: scale(0,1);
+		-ms-transform: scale(0,1);
+		transform: scale(0,1);
+		color: white;
+		box-shadow: none;
+    padding-top: 0;
 }
 
 .hovereffect:hover .overlay {
@@ -243,6 +248,8 @@ a{
   position: relative;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+  width: 100%;
+  height: auto;
 }
 
 .hovereffect:hover img {
