@@ -26,7 +26,7 @@ p,em,li {
 
 .education, .skills, .projects, .work {
     border-top: 1px solid black;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
 }
 .skills{
     display: flex;
@@ -84,6 +84,7 @@ ul {
     }
     div {
         margin: 0 20px;
+        min-width: 21%;
     }
 }
 

@@ -8,7 +8,7 @@ html {
   max-width: 750px;
   margin: 0px auto; }
 
-h1 {
+h1, h2 {
   font-size: 27px; }
 
 h2 {
@@ -22,7 +22,7 @@ p, em, li {
 
 .education, .skills, .projects, .work {
   border-top: 1px solid black;
-  padding: 10px 0; }
+  padding: 10px 0 5px 0; }
 
 .skills {
   display: flex; }
@@ -62,7 +62,8 @@ ul {
   .tech ul {
     padding-left: 5px; }
   .tech div {
-    margin: 0 20px; }
+    margin: 0 20px;
+    min-width: 21%; }
 
 #javascript ul {
   display: flex; }
@@ -79,6 +80,8 @@ ul {
   .project-box .project {
     width: 50%;
     padding: 5px; }
+    .project-box .project .overlay {
+      padding-top: 20px; }
     .project-box .project a {
       font-weight: bold;
       color: inherit; }
