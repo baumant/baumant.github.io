@@ -108,6 +108,8 @@ a {
   background: linear-gradient(#C8E6C9, #A5D6A7); }
   .projects-page h3.text-center {
     margin-top: 70px; }
+  .projects-page .press a {
+    text-decoration: underline; }
 
 .project {
   margin: 0;

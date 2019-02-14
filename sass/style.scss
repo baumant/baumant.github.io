@@ -169,16 +169,17 @@ a{
   h3.text-center{
     margin-top: 70px;
   }
+  .press a{
+    text-decoration: underline;
+  }
 }
 .project {
 	margin: 0;
 	padding: 20px;
-	
 }
 
 .hovereffect {
   position: relative;
-
   .img-responsive {
     display: block;
     position: relative;
