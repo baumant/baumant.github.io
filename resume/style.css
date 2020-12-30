@@ -56,19 +56,19 @@ ul {
 
 .tech {
   display: flex;
-  justify-content: space-around; }
-  .tech li {
-    margin: 0 20px; }
-  .tech ul {
-    padding-left: 5px; }
+  justify-content: space-around;
+  width: 100%; }
   .tech div {
-    margin: 0 20px;
     min-width: 21%; }
-
-#javascript ul {
-  display: flex; }
-  #javascript ul div {
-    margin: 0; }
+    .tech div li {
+      margin-left: 10px; }
+      .tech div li ul {
+        padding: 0;
+        margin: 0; }
+      .tech div li#javascript ul {
+        display: flex; }
+        .tech div li#javascript ul div {
+          margin: 0 20px; }
 
 .projects.maker {
   border-top: 0;

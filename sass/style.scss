@@ -55,22 +55,20 @@ a{
 
 .side-nav {
 	@include bigfont;
-	width: 20%;
-	height:100%;
 	position: fixed;
 	box-shadow: 0px 0 15px;
-
+	width: 20%;
+	height: 100%;
+	z-index: 1;
 	@media screen and (min-width: 768px){
 		width: 10%;
 	}
-
 	@media screen and (min-width: 1025px){
 		box-shadow: 0px 0 60px;
 	}
-		.navitem {
-		padding-top: 49%;
+	
+	.navitem {
 		padding-top: 7vh;
-		padding-left: 5px;
 		text-align: center;
 		color: $accent-text;
 		border-bottom: 1px solid grey;
@@ -78,7 +76,10 @@ a{
 		height: 20vh;
 		background-color: $primary-color;
 		transition: background-color 0.5s ease;
-
+		@media screen and (min-width: 768px){
+			padding-top: 7vh;
+			padding-left: 5px;
+		}
 		@media screen and (min-width: 1024px){
 			font-size: 20px;
 		}
@@ -146,12 +147,14 @@ a{
 	@media screen and (min-width: 1024px) {
 		padding-top: 100px;
 		padding-top: 10vh;
-		
 	}
 	
 	p {
 		@media screen and (min-width: 1024px) {
 			padding: 20px;	
+			&:last-of-type {
+				padding-top: 70px;
+			}
 		}
 	}
 	div {
@@ -169,8 +172,19 @@ a{
   h3.text-center{
     margin-top: 70px;
   }
-  .press a{
-    text-decoration: underline;
+  .press {
+		margin-top: 30px;
+
+		p {
+			text-align: center;
+		}
+
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration-color: bisque;
+			}
+		}
   }
 }
 .project {
@@ -188,7 +202,11 @@ a{
     width: 100%;
     height: 230px;
     background-size: cover;
-    background-position: center;
+		background-position: center;
+		overflow: hidden;
+		video {
+			height: 100%;
+		}
   }
 }
 
@@ -211,10 +229,9 @@ a{
 	a{
 		color: white;
 		text-decoration: underline;
+		display: block;
 	}
 }
-
-
 
 @media screen and (min-width: 1025px){
 
@@ -259,7 +276,7 @@ a{
 }
 
 
-.hovereffect:hover .img-responseive {
+.hovereffect:hover .img-responsive {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
@@ -300,6 +317,9 @@ a{
 	background: linear-gradient($projectspage-color, $resumepage-color);
 	a {
 		text-decoration: underline;
+		&:hover {
+			text-decoration-color: bisque;
+		}
 	}
 	
 	.resume-head {
