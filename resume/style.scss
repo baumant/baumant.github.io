@@ -99,6 +99,25 @@ ul {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
+    .skills, .tech {
+        flex-wrap: wrap;
+    }
+    .tech {
+        justify-content: flex-start;
+        & > div {
+            min-width: 100%;
+
+            & > li {
+                padding: 5px 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}
 
 .projects.maker{
     border-top: 0;

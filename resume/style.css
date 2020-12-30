@@ -70,6 +70,20 @@ ul {
         .tech div li#javascript ul div {
           margin: 0 20px; }
 
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 10px; }
+
+  .skills, .tech {
+    flex-wrap: wrap; }
+
+  .tech {
+    justify-content: flex-start; }
+    .tech > div {
+      min-width: 100%; }
+      .tech > div > li {
+        padding: 5px 0;
+        margin-left: 20px; } }
 .projects.maker {
   border-top: 0;
   padding-top: 0; }
