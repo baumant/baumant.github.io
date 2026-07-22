@@ -164,6 +164,11 @@ section {
   margin-top: 2px;
 }
 
+.project-highlights {
+  color: var(--muted);
+  margin-top: 2px;
+}
+
 @media screen and (max-width: 640px) {
   body {
     padding: 18px 14px 28px;
@@ -186,7 +191,7 @@ section {
 
 @media print {
   @page {
-    margin: 0.38in;
+    margin: 0.34in;
     size: letter;
   }
 
@@ -213,7 +218,7 @@ section {
 
   p,
   li {
-    font-size: 12px;
+    font-size: 11.8px;
   }
 
   .mission {
@@ -222,12 +227,12 @@ section {
   }
 
   section {
-    margin-top: 9px;
-    padding-top: 7px;
+    margin-top: 8px;
+    padding-top: 6px;
   }
 
   .job + .job {
-    margin-top: 8px;
+    margin-top: 7px;
   }
 
   .project-box {
