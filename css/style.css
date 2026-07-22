@@ -157,18 +157,18 @@ h1 {
   background: var(--paper);
 }
 
-.section--professional,
+.section--ecommerce,
 .section--contact {
   color: var(--paper);
   background: var(--green);
 }
 
-.section--professional a,
+.section--ecommerce a,
 .section--contact a {
   color: var(--paper);
 }
 
-.section--professional a:hover,
+.section--ecommerce a:hover,
 .section--contact a:hover {
   color: rgba(251, 251, 246, 0.72);
 }
@@ -185,9 +185,41 @@ h2 {
   font-weight: 700;
 }
 
-.section--professional h2,
+.section--ecommerce h2,
 .section--contact h2 {
   color: var(--paper);
+}
+
+.ecommerce-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(2rem, 6vw, 4rem);
+  border-top: 1px solid rgba(251, 251, 246, 0.24);
+}
+
+.ecommerce-item {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(251, 251, 246, 0.24);
+}
+
+.ecommerce-item h3 {
+  margin-bottom: 0.7rem;
+}
+
+.ecommerce-item p,
+.ecommerce-item ul {
+  max-width: 46ch;
+  margin-bottom: 0;
+  color: rgba(251, 251, 246, 0.78);
+}
+
+.ecommerce-item ul {
+  margin-top: 0;
+  padding-left: 1.2rem;
+}
+
+.ecommerce-item li + li {
+  margin-top: 0.45rem;
 }
 
 .project-list {
@@ -284,7 +316,8 @@ h3 {
   }
 
   .project,
-  .compact-row {
+  .compact-row,
+  .ecommerce-list {
     grid-template-columns: 1fr;
   }
 
